@@ -1,5 +1,5 @@
 Application Title: MartHelpr
-Application Purpose: This program is a GUI-based bill-splitting desktop application, allowing its users to upload transactions and divide their costs among payers. It also allows users to view and edit previous transactions, and generate reports. It generates and interfaces with a MySQL database to store and access saved information.
+Application Purpose: This program is a GUI-based bill-splitting desktop application, allowing its users to upload transactions and divide their costs among payers. It also allows users to view and edit previous transactions, and generate reports. It interfaces with a MySQL database to store and access saved information.
 
 Author: James Wilson
 Email: jwi3581@wgu.edu
