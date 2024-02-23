@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MartHelprMenuController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="720.0" spacing="10.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Main Menu" />
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <VBox prefWidth="450.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT">
+                           <children>
+                              <Label text="Transactions" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <TableView fx:id="transTableView" minHeight="-Infinity" prefHeight="150.0">
+                           <columns>
+                              <TableColumn fx:id="transIDCol" minWidth="100.0" prefWidth="-1.0" text="Transaction ID" />
+                              <TableColumn fx:id="totalCol" minWidth="70.0" prefWidth="-1.0" text="Total" />
+                              <TableColumn fx:id="noPayersCol" minWidth="85.0" prefWidth="-1.0" text="No. Payers" />
+                              <TableColumn fx:id="transDateCol" minWidth="100.0" prefWidth="-1.0" text="Transaction Date" />
+                              <TableColumn fx:id="updateCol" minWidth="85.0" prefWidth="-1.0" text="Last Updated" />
+                           </columns>
+                        </TableView>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#onActionCreateTrans" prefWidth="60.0" text="Create" />
+                                    <Button mnemonicParsing="false" onAction="#onActionEditTrans" prefWidth="60.0" text="Edit" />
+                                    <Button mnemonicParsing="false" onAction="#onActionDeleteTransaction" prefWidth="60.0" text="Delete" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefWidth="250.0">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT">
+                           <children>
+                              <Label text="Payers" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <TableView fx:id="payersTableView" minHeight="-Infinity" prefHeight="150.0">
+                           <columns>
+                              <TableColumn fx:id="payerIDCol" minWidth="80.0" prefWidth="-1.0" text="Payer ID" />
+                              <TableColumn fx:id="nameCol" minWidth="80.0" prefWidth="-1.0" text="Name" />
+                              <TableColumn fx:id="createdCol" minWidth="80.0" prefWidth="-1.0" text="Created" />
+                           </columns>
+                        </TableView>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#onActionCreatePayer" prefWidth="60.0" text="Create" />
+                                    <Button mnemonicParsing="false" onAction="#onActionEditPayer" prefWidth="60.0" text="Edit" />
+                                    <Button mnemonicParsing="false" onAction="#onActionDeletePayer" prefWidth="60.0" text="Delete" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" layoutX="20.0" layoutY="385.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextArea fx:id="martHelprMenuMsgTxt" editable="false" focusTraversable="false" pickOnBounds="false" prefHeight="40.0" style="-fx-background-color: transparent; -fx-control-inner-background: transparent; -fx-font-weight: bold; -fx-text-fill: black;" HBox.hgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+                     </opaqueInsets>
+                  </TextArea>
+                  <Button mnemonicParsing="false" onAction="#onActionReports" prefWidth="60.0" text="Reports" />
+                  <Button mnemonicParsing="false" onAction="#onActionLogOut" prefWidth="60.0" text="Log Out" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

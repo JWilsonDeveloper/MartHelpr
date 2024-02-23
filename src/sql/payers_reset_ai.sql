@@ -1,0 +1,1 @@
+ALTER TABLE payers AUTO_INCREMENT = 1;

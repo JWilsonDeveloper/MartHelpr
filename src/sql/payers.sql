@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `marthelpr`.`payers` (
+  `payer_id` INT NOT NULL AUTO_INCREMENT,
+  `payer_name` VARCHAR(45) NULL DEFAULT NULL,
+  `created` DATETIME NULL DEFAULT NULL,
+  PRIMARY KEY (`payer_id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 3
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci

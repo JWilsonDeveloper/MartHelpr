@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tessdata">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/Tess4J-3.4.8-src/Tess4J/tessdata" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
